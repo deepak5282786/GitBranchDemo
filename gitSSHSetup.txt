@@ -16,7 +16,7 @@ GIT  SSH KEY SETUP
 
 
 
---->>>  git push -u origin master  ): got error not permission to push into this repo
+--->>>  git push -u origin master 
 
 
 
@@ -29,3 +29,58 @@ GIT  SSH KEY SETUP
 2.git config --global alias.ci commit  (use ci instead of commit)---->git ci
 
 3.git config --global alias.unstage 'restore --staged --'  (to unstaged file)--->git unstaged this.txt
+
+
+
+-----=>>>>>> Git Creating and Switching Branching in git
+
+1. git checkout -b develop  (ye ek develop branch banayega aur usme le jayega mtlb uus branch me switch kara dega)
+
+2. git checkout master  (to switch into master branch)
+
+3. git branch (check how many branch are there and curentil where i am )
+
+
+
+---->>>>>Branching and Merging
+
+git merge trycleanup    (it merge tryCleanup with the master)
+
+
+
+------>>>>>>>>>Merge Conflict Resolve
+
+git branch -v (agar aap har branch ka last commit dekhana chahate ho-----[commit hash , commit message])
+
+git branch --merged (vo branch dikhata hai jo aapne already merge kar di hai)
+
+git branch --no-merged  (not already merged branch)
+
+----->Deleting Branches
+
+git branch -d develop  (gives error if develop is not merged)
+git branch -D develop  (no error and branch gets deleted)
+
+
+
+------->>>>>>>>Git Branching workflow------
+1.Long Running branches
+  
+   a. Master
+   b. Develop
+   c. PU(propose Update)
+
+2. Topic Branches
+   
+    a. replace text with type js(typejsinte)
+
+
+----->>> pushing branches to remote repository
+
+git push -u origin bugfix
+
+git push -u origin bugfix:new bugfix
+
+git push -d origin bugfix (to delete branches from remote)
+
+
